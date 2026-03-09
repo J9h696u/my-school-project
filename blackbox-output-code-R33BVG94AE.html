@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School Project</title>
+    <style>
+        /* CSS: This controls the look and feel of the site */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #bdc3c7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #fafafa;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #fff;
+            margin-top: 2rem;
+        }
+
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #27ae60;
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My School Competition Project</h1>
+        <p>Web Development & Security Awareness</p>
+    </header>
+
+    <div class="container">
+        <h2>About This Project</h2>
+        <p>Welcome to my project page. This website demonstrates basic web development skills including HTML structure, CSS styling, and JavaScript interactivity.</p>
+        
+        <div class="project-card">
+            <h3>Project Goal</h3>
+            <p>To create a safe, interactive, and informative website that showcases understanding of web technologies.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Interactive Feature</h3>
+            <p>Click the button below to see JavaScript in action.</p>
+            <button class="btn" onclick="showMessage()">Click Me</button>
+            <p id="message">Thank you for visiting! This is a safe interaction.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 School Project. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript: This adds interactivity to the page
+        function showMessage() {
+            // Get the message element
+            var msg = document.getElementById('message');
+            
+            // Change the display style to show the message
+            msg.style.display = 'block';
+            
+            // Optional: Change button text
+            var btn = document.querySelector('.btn');
+            btn.textContent = "Thanks!";
+            btn.style.backgroundColor = "#27ae60";
+        }
+    </script>
+
+</body>
+</html>
